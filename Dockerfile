@@ -15,7 +15,8 @@ RUN apt-get update && apt-get install -y \
     mxe-i686-w64-mingw32.static-lua \
     mxe-i686-w64-mingw32.static-ncurses \
     ccache \
-    lua5.3
+    lua5.3 \
+    astyle
 ENV CXX=g++
 ENV LDFLAGS='-static-libgcc -static-libstdc++' 
 ENV CROSS=/usr/lib/mxe/usr/bin/i686-w64-mingw32.static-
